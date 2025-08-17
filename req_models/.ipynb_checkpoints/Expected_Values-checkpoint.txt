@@ -1,0 +1,40 @@
+'Categories' 
+'Glazed Vitrified Tiles': 1
+'Glazed Porcelain Tiles': 2 
+'Others Commodities': 3 
+'Ceramic Wall Tiles': 4 
+'Ceramic Floor Tiles': 5 
+'Polished Glazed Vitrified Tiles': 6
+
+
+tier1_country = ["United States","United Kingdom","Canada","Australia","France","Germany","Italy","Spain","Netherlands","Belgium","Sweden","Japan","Singapore","Ireland","Portugal","Austria","Switzerland","New Zealand"]
+tier2_country = ["Russia","Poland","United Arab Emirates","Thailand","Greece","Croatia","Romania","Oman","Albania","Kuwait","Taiwan","Qatar","Saudi Arabia","South Africa","Israel","Nepal","Colombia","Lithuania","Bulgaria","Venezuela","Morocco","Kenya","Ecuador","China","Cyprus","Kazakhstan","Jamaica","Peru","Mauritius","Maldives","Chile","Slovak Republic","Serbia","Sri Lanka","Jordan","Portugal","Angola","Trinidad & Tobago","Slovenia","Nigeria","Guyana","Honduras","Ghana","Netherlands Antilles","Iran","Brazil","Bangladesh","Costa Rica","Malta","Nicaragua","Montenegro","Bahrain","Latvia","Uzbekistan","Ukraine","Georgia","Turkey","Czech Republic","Egypt","Philippines","Bosnia & Herzegovina","Hungary","Lebanon","Korea, Republic Of","Uruguay","Algeria","Armenia","Pakistan","Cambodia","Cameroon","Vietnam, Democratic Rep. Of","Mexico","Dominican Repulic","Indonesia","Gautemala","Moldova, Republic Of","Belize","Palestine State","Fiji","Brunei"]
+tier3_country = ["Somalia","Senegal","Djibouti","Madagascar","Tanzania","Azarbaijan","Reunion","Sierra Leona","Gambia","El Salvador","Ethiopia","Yemen, Democratic","Mozambique","Benin","Liberia","Macedonia,The Former Yugoslav Republic Of","Cape Verde Islands","Mauritania","Congo, The Democratic Republic Of The","Guinea","Bhutan","Cote D Ivoire","Togo","French Guyana","Tajikistan","Guinea Bissau","Surinam","Congo","Syria","Kyrghystan","Burkina Faso","Mali","French Polynesia","Martinique","Gabon","Comoros","Afghanistan","Turkmenistan","Malawi","Seychelles","Barbados"]
+
+
+FOREIGN_COUNTRY
+tier1_country:1
+tier2_country:2
+tier3_country:3
+
+DRAWBACK
+(-0.001, 2818.75]     0 
+(2818.75, 5432.5]     1 
+(5432.5, 11099.75]    2 
+(11099.75, 314727.0]  3
+
+
+FOREIGN PORT CONTINENT
+'asia':1 
+'europe':2 
+'north_america':3
+'africa':4 
+'south_america':5
+'oceania':6
+
+
+UNIT_VALUE_USD
+(-0.001, 0.23]    0
+(0.23, 0.367]     1
+(0.367, 4.76]     2
+(4.76, 499.744]   3

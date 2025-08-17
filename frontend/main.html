@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+
+<body>
+        <!-- what we want -->
+        <!-- {"quantity": 58980,"drawback": 89040.5,"foreign_country": "United States","categories": "Glazed Vitrified Tiles"} -->
+        <pre>
+        to do 
+        1 - good frontend
+        2 - postgresql linked to store the output and input of the user
+        3 - dockerize it
+        4 - vercel host fastapi
+        </pre>
+
+        <div class="quantity_input">
+            <label for="quantity">Enter your quantity</label>
+            <input type="number" name="" id="quantity" required>
+        </div>
+
+        <br>
+        <br>
+
+        <div class="drawback_input">
+            <label for="drawback">Enter your drawback</label>
+            <input type="number" required>
+        </div>
+
+        <br>
+        <br>
+
+        <div class="foreign_country_input">
+            <label for="foreign_country">Exported to Country</label>
+            <select name="Countries" id="foreign_country">
+                <option value="Afghanistan">Afghanistan</option>
+                <option value="Albania">Albania</option>
+                <option value="Algeria">Algeria</option>
+                <option value="Angola">Angola</option>
+                <option value="Armenia">Armenia</option>
+                <option value="Australia">Australia</option>
+                <option value="Austria">Austria</option>
+                <option value="Azerbaijan">Azerbaijan</option>
+                <option value="Bahrain">Bahrain</option>
+                <option value="Bangladesh">Bangladesh</option>
+                <option value="Barbados">Barbados</option>
+                <option value="Belgium">Belgium</option>
+                <option value="Belize">Belize</option>
+                <option value="Benin">Benin</option>
+                <option value="Bhutan">Bhutan</option>
+                <option value="Bosnia & Herzegovina">Bosnia & Herzegovina</option>
+                <option value="Brazil">Brazil</option>
+                <option value="Brunei">Brunei</option>
+                <option value="Bulgaria">Bulgaria</option>
+                <option value="Burkina Faso">Burkina Faso</option>
+                <option value="Cambodia">Cambodia</option>
+                <option value="Cameroon">Cameroon</option>
+                <option value="Canada">Canada</option>
+                <option value="Cape Verde Islands">Cape Verde Islands</option>
+                <option value="Chile">Chile</option>
+                <option value="China">China</option>
+                <option value="Colombia">Colombia</option>
+                <option value="Comoros">Comoros</option>
+                <option value="Congo">Congo</option>
+                <option value="Congo, The Democratic Republic Of The">Congo, The Democratic Republic Of The</option>
+                <option value="Costa Rica">Costa Rica</option>
+                <option value="Cote D Ivoire">Cote D Ivoire</option>
+                <option value="Croatia">Croatia</option>
+                <option value="Cyprus">Cyprus</option>
+                <option value="Czech Republic">Czech Republic</option>
+                <option value="Djibouti">Djibouti</option>
+                <option value="Dominican Republic">Dominican Republic</option>
+                <option value="Ecuador">Ecuador</option>
+                <option value="Egypt">Egypt</option>
+                <option value="El Salvador">El Salvador</option>
+                <option value="Ethiopia">Ethiopia</option>
+                <option value="Fiji">Fiji</option>
+                <option value="France">France</option>
+                <option value="French Guyana">French Guyana</option>
+                <option value="French Polynesia">French Polynesia</option>
+                <option value="Gabon">Gabon</option>
+                <option value="Gambia">Gambia</option>
+                <option value="Georgia">Georgia</option>
+                <option value="Germany">Germany</option>
+                <option value="Ghana">Ghana</option>
+                <option value="Greece">Greece</option>
+                <option value="Guatemala">Guatemala</option>
+                <option value="Guinea">Guinea</option>
+                <option value="Guinea Bissau">Guinea Bissau</option>
+                <option value="Guyana">Guyana</option>
+                <option value="Honduras">Honduras</option>
+                <option value="Hungary">Hungary</option>
+                <option value="Indonesia">Indonesia</option>
+                <option value="Iran">Iran</option>
+                <option value="Ireland">Ireland</option>
+                <option value="Israel">Israel</option>
+                <option value="Italy">Italy</option>
+                <option value="Jamaica">Jamaica</option>
+                <option value="Japan">Japan</option>
+                <option value="Jordan">Jordan</option>
+                <option value="Kazakhstan">Kazakhstan</option>
+                <option value="Kenya">Kenya</option>
+                <option value="Korea, Republic Of">Korea, Republic Of</option>
+                <option value="Kuwait">Kuwait</option>
+                <option value="Kyrgyzstan">Kyrgyzstan</option>
+                <option value="Latvia">Latvia</option>
+                <option value="Lebanon">Lebanon</option>
+                <option value="Liberia">Liberia</option>
+                <option value="Lithuania">Lithuania</option>
+                <option value="Macedonia, The Former Yugoslav Republic Of">Macedonia, The Former Yugoslav Republic Of
+                </option>
+                <option value="Madagascar">Madagascar</option>
+                <option value="Malawi">Malawi</option>
+                <option value="Maldives">Maldives</option>
+                <option value="Mali">Mali</option>
+                <option value="Malta">Malta</option>
+                <option value="Martinique">Martinique</option>
+                <option value="Mauritania">Mauritania</option>
+                <option value="Mauritius">Mauritius</option>
+                <option value="Mexico">Mexico</option>
+                <option value="Moldova, Republic Of">Moldova, Republic Of</option>
+                <option value="Montenegro">Montenegro</option>
+                <option value="Morocco">Morocco</option>
+                <option value="Mozambique">Mozambique</option>
+                <option value="Nepal">Nepal</option>
+                <option value="Netherlands">Netherlands</option>
+                <option value="Netherlands Antilles">Netherlands Antilles</option>
+                <option value="New Zealand">New Zealand</option>
+                <option value="Nicaragua">Nicaragua</option>
+                <option value="Nigeria">Nigeria</option>
+                <option value="Oman">Oman</option>
+                <option value="Pakistan">Pakistan</option>
+                <option value="Palestine State">Palestine State</option>
+                <option value="Peru">Peru</option>
+                <option value="Philippines">Philippines</option>
+                <option value="Poland">Poland</option>
+                <option value="Portugal">Portugal</option>
+                <option value="Qatar">Qatar</option>
+                <option value="Reunion">Reunion</option>
+                <option value="Romania">Romania</option>
+                <option value="Russia">Russia</option>
+                <option value="Saudi Arabia">Saudi Arabia</option>
+                <option value="Senegal">Senegal</option>
+                <option value="Serbia">Serbia</option>
+                <option value="Seychelles">Seychelles</option>
+                <option value="Sierra Leone">Sierra Leone</option>
+                <option value="Singapore">Singapore</option>
+                <option value="Slovak Republic">Slovak Republic</option>
+                <option value="Slovenia">Slovenia</option>
+                <option value="Somalia">Somalia</option>
+                <option value="South Africa">South Africa</option>
+                <option value="Spain">Spain</option>
+                <option value="Sri Lanka">Sri Lanka</option>
+                <option value="Surinam">Surinam</option>
+                <option value="Sweden">Sweden</option>
+                <option value="Switzerland">Switzerland</option>
+                <option value="Syria">Syria</option>
+                <option value="Taiwan">Taiwan</option>
+                <option value="Tajikistan">Tajikistan</option>
+                <option value="Tanzania">Tanzania</option>
+                <option value="Thailand">Thailand</option>
+                <option value="Togo">Togo</option>
+                <option value="Trinidad & Tobago">Trinidad & Tobago</option>
+                <option value="Turkey">Turkey</option>
+                <option value="Turkmenistan">Turkmenistan</option>
+                <option value="Ukraine">Ukraine</option>
+                <option value="United Arab Emirates">United Arab Emirates</option>
+                <option value="United Kingdom">United Kingdom</option>
+                <option value="United States">United States</option>
+                <option value="Uruguay">Uruguay</option>
+                <option value="Uzbekistan">Uzbekistan</option>
+                <option value="Venezuela">Venezuela</option>
+                <option value="Vietnam, Democratic Rep. Of">Vietnam, Democratic Rep. Of</option>
+                <option value="Yemen, Democratic">Yemen, Democratic</option>
+            </select>
+        </div>
+
+
+
+        <br>
+        <br>
+
+        <div class="category_item_input">
+            <label for="categories">Select the category of to be exported Product</label>
+            <select name="Category_of_exported_Item" id="categories">
+                <option value="Ceramic Floor Tiles">Ceramic Floor Tiles</option>
+                <option value="Ceramic Wall Tiles">Ceramic Wall Tiles</option>
+                <option value="Glazed Porcelain Tiles">Glazed Porcelain Tiles</option>
+                <option value="Glazed Vitrified Tiles">Glazed Vitrified Tiles</option>
+                <option value="Polished Glazed Vitrified Tiles">Polished Glazed Vitrified Tiles</option>
+                <option value="Others Commodities">Others Commodities</option>
+            </select>
+        </div>
+
+        <br>
+
+        <button class="predict_output">Predict</button>
+        <button class="about_output">AboutApi</button>
+        <p class="results"></p>
+        <br>
+        <a href="http://127.0.0.1:8000/docs">docs</a>
+    </main>
+    <script src="/static/script.js"></script>
+</body>
+
+</html>
