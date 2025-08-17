@@ -1,5 +1,5 @@
-const URL_predict = 'http://127.0.0.1:8000/predict'
-const URL_about = 'http://127.0.0.1:8000/about'
+const URL_predict = 'https://fractal-exportprice-predictor.onrender.com/predict'
+const URL_about = 'https://fractal-exportprice-predictor.onrender.com/about'
 
 let quantity = document.querySelector('.quantity_input input')
 let drawback = document.querySelector('.drawback_input input')
