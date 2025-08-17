@@ -10,11 +10,15 @@ from fastapi.staticfiles import StaticFiles
 app = FastAPI()
 
 
+origins = [
+    "https://fractal-exportprice-predictor.onrender.com",  # frontend Render URL
+]
+
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://127.0.0.1:5501"],  # or ["*"] for all origins
+    allow_origins=origins,        # specify frontend domain
     allow_credentials=True,
-    allow_methods=["*"],
+    allow_methods=["*"],          # or restrict to specific methods
     allow_headers=["*"],
 )
 
