@@ -38,24 +38,11 @@ body {
 }
 
 .logo {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
     font-family: 'Eden Meadow', serif;
     font-size: 3rem;
     font-weight: 100;
     margin-bottom: 3rem;
     padding-top: 5px;
-}
-
-.logo-img {
-    width: 40px;
-    height: 40px;
-    object-fit: contain;
-}
-
-.logo span {
-    display: inline-block;
 }
 
 .nav-section {
