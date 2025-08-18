@@ -7,6 +7,19 @@ from req_models.models import model,scaler
 from schema.user_input import UserInput
 from fastapi.staticfiles import StaticFiles
 
+
+app = FastAPI()
+
+# Mount static folder
+app.mount("/static", StaticFiles(directory="static"), name="static")
+
+# Set up Jinja2 templates (if using templates)
+templates = Jinja2Templates(directory="templates")
+
+@app.get("/", response_class=HTMLResponse)
+async def home(request: Request):
+    return templates.TemplateResponse("index.html", {"request": request})
+
 app = FastAPI()
 
 
@@ -32,7 +45,7 @@ async def home(request: Request):
 
 @app.get('/about')
 def hello():
-    return {'message':f'This API is for Fractal Export Price Prediction with XGBOOST Classifier of 78.6% of accuracy'}
+    return {'message':f'THE RESPONSE HAVE WITH ACCURACY OF 78.6%'}
 
 
 @app.post('/predict')
@@ -50,16 +63,15 @@ def predict_user_input(data: UserInput):
         prediction = model.predict(scaled_input)[0]  # call predict on model, not app
         def prediction_str(pred):
             if pred ==0:
-                return 'The Per Unit value in USD is b/w $0 to $0.23'
+                return 'THE PER UNIT VALUE IN USD IS B/W $0 TO $0.23'
             elif pred==1:
-                return 'The Per Unit value in USD is b/w $0.23 to $0.367'
+                return 'THE PER UNIT VALUE IN USD IS B/W $0.23 TO $0.367'
             elif pred==2:
-                return 'The Per Unit value in USD is b/w $0.367 to $ 4.76'
+                return 'THE PER UNIT VALUE IN USD IS B/W $0.367 TO $4.76'
             elif pred==3:
-                return 'The Per Unit value in USD is b/w $4.76 to and above'
+                return 'THE PER UNIT VALUE IN USD IS B/W $4.76 AND ABOVE'
         return JSONResponse(status_code=200, content={'predicted_category': prediction_str(prediction)})
     except Exception as err:
         return JSONResponse(status_code=400, content={'error': str(err)})
 
     # scaled_input = scaler.
-    
