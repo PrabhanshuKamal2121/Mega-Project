@@ -7,7 +7,6 @@ from req_models.models import model,scaler
 from schema.user_input import UserInput
 from fastapi.staticfiles import StaticFiles
 import os
-import psycopg2
 
 
 app = FastAPI()
