@@ -4,6 +4,9 @@ A FastAPI-based web application that predicts export prices using machine learni
 
 ![image alt](https://github.com/PrabhanshuKamal2121/Mega-Project/blob/ea3c63f8a2cf365d4ee426216e21a1f5f79adf57/FRONTEND-PricePredictor.png)
 
+
+![image alt](https://github.com/PrabhanshuKamal2121/Mega-Project/blob/392ad3a35ddcbd8e2a580f6edcda86c14868355e/How_it_works.jpeg)
+
 ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
 ![HTML](https://img.shields.io/badge/HTML5-E34C26?style=for-the-badge&logo=html5&logoColor=white)
 ![CSS](https://img.shields.io/badge/CSS3-264DE4?style=for-the-badge&logo=css3&logoColor=white)
@@ -12,6 +15,8 @@ A FastAPI-based web application that predicts export prices using machine learni
 ![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github)
 ![VS Code](https://img.shields.io/badge/VS%20Code-007ACC?style=for-the-badge&logo=visual-studio-code)
 ![n8n](https://img.shields.io/badge/n8n-FF6D70?style=for-the-badge&logo=n8n&logoColor=white)
+![FastAPI](https://img.shields.io/badge/FastAPI-005571?style=for-the-badge&logo=fastapi)
+![Docker](https://img.shields.io/badge/docker-257bd6?style=for-the-badge&logo=docker&logoColor=white)
 
 ## 📌 Features
 
